@@ -12,6 +12,7 @@ export class PeopleComponent implements OnInit {
   constructor(private peopleService: PeopleService) { }
 
   peopleList: PetNamesByOwnerGender[];
+  errorMessage: string = '';
 
   ngOnInit() {
     var petNamesList:PetList[] = [];
@@ -20,7 +21,7 @@ export class PeopleComponent implements OnInit {
           this.peopleList = people;               
         },
         error =>{
-          
+          this.errorMessage = error;
         }
       )
   }
