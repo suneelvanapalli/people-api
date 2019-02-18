@@ -21,7 +21,6 @@ namespace PeopleApi.Controllers
         [HttpGet("pets/{petType}")]
         public async Task<List<PetByOwnerDTO>> Get(string petType)
         {
-            throw new Exception("test");
             return await _peopleService.GetPetsByCategory(petType);
         }
 
