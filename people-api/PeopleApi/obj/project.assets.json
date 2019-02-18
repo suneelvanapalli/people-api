@@ -13360,11 +13360,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suneel.vanapalli\\source\\repos\\PeopleApi\\PeopleApi.csproj",
+      "projectUniqueName": "C:\\Users\\suneel.vanapalli\\Documents\\people-api\\people-api\\PeopleApi\\PeopleApi.csproj",
       "projectName": "PeopleApi",
-      "projectPath": "C:\\Users\\suneel.vanapalli\\source\\repos\\PeopleApi\\PeopleApi.csproj",
+      "projectPath": "C:\\Users\\suneel.vanapalli\\Documents\\people-api\\people-api\\PeopleApi\\PeopleApi.csproj",
       "packagesPath": "C:\\Users\\suneel.vanapalli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suneel.vanapalli\\source\\repos\\PeopleApi\\obj\\",
+      "outputPath": "C:\\Users\\suneel.vanapalli\\Documents\\people-api\\people-api\\PeopleApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

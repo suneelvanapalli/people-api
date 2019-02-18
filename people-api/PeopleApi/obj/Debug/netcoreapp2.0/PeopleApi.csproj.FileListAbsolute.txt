@@ -10,3 +10,15 @@ C:\Users\suneel.vanapalli\source\repos\PeopleApi\obj\Debug\netcoreapp2.0\PeopleA
 C:\Users\suneel.vanapalli\source\repos\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.dll
 C:\Users\suneel.vanapalli\source\repos\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.pdb
 C:\Users\suneel.vanapalli\source\repos\PeopleApi\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\bin\Debug\netcoreapp2.0\PeopleApi.deps.json
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\bin\Debug\netcoreapp2.0\PeopleApi.runtimeconfig.json
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\bin\Debug\netcoreapp2.0\PeopleApi.runtimeconfig.dev.json
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\bin\Debug\netcoreapp2.0\PeopleApi.dll
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\bin\Debug\netcoreapp2.0\PeopleApi.pdb
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.csprojAssemblyReference.cache
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.csproj.CoreCompileInputs.cache
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.AssemblyInfoInputs.cache
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.AssemblyInfo.cs
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.dll
+C:\Users\suneel.vanapalli\Documents\people-api\people-api\PeopleApi\obj\Debug\netcoreapp2.0\PeopleApi.pdb
