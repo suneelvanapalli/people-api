@@ -49,27 +49,30 @@ namespace PeopleApi.Services
         /// </summary>
         /// <param name="petType"></param>
         /// <returns></returns>
-        public async Task<Dictionary<string, List<string>>> GetPetsByCategory(string petType)
+        public async Task<List<PetByOwnerDTO>> GetPetsByCategory(string petType)
         {
             var peopleList = await this.GetPeopleDetails();
-            var petOwnerDTO = new Dictionary<string, List<string>>();
+            var petOwnerListDTO = new List<PetByOwnerDTO>();
+
             foreach (var people in peopleList)
             {
-                if (!petOwnerDTO.ContainsKey(people.Gender))
+                var petOwner = petOwnerListDTO.Find(p => p.Gender == people.Gender);                 
+                if (petOwner == null)
                 {
-                    petOwnerDTO.Add(people.Gender, new List<string>());
+                    petOwner = new PetByOwnerDTO() { Gender = people.Gender, Pets = new List<string>() };
+                    petOwnerListDTO.Add(petOwner);
                 }
 
                 if (people.Pets != null && people.Pets.Count > 0)
-                    petOwnerDTO[people.Gender].AddRange(people.Pets.Where(p => p.Type.ToLower() == petType.Trim().ToLower()).Select(p => p.Name));
+                    petOwner.Pets.AddRange(people.Pets.Where(p => p.Type.ToLower() == petType.Trim().ToLower()).Select(p => p.Name));
             }
 
-            foreach(var key in petOwnerDTO.Keys)
+            foreach(var people in petOwnerListDTO)
             {
-                petOwnerDTO[key].Sort();
+                people.Pets.Sort();
             }
 
-            return petOwnerDTO;
+            return petOwnerListDTO;
         }
     }
 }

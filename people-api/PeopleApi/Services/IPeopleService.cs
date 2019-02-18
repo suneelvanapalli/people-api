@@ -9,6 +9,6 @@ namespace PeopleApi.Services
     public interface IPeopleService
     {
         Task<List<People>> GetPeopleDetails();
-        Task<Dictionary<string, List<string>>> GetPetsByCategory(string petType);
+        Task<List<PetByOwnerDTO>> GetPetsByCategory(string petType);
     }
 }

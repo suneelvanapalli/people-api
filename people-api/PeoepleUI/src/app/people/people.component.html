@@ -1,0 +1,8 @@
+<div *ngFor = "let people of peopleList">
+    <h5 >
+        {{people.gender}}
+    </h5>
+    <ul *ngFor = "let pet of people.pets">
+        <li>{{pet}}</li>
+    </ul>
+</div>

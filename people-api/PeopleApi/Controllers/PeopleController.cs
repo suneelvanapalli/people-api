@@ -19,7 +19,7 @@ namespace PeopleApi.Controllers
         }
         
         [HttpGet("pets/{petType}")]
-        public async Task<Dictionary<string,List<string>>> Get(string petType)
+        public async Task<List<PetByOwnerDTO>> Get(string petType)
         {
             return await _peopleService.GetPetsByCategory(petType);
         }

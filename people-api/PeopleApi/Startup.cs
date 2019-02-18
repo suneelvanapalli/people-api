@@ -39,6 +39,13 @@ namespace PeopleApi
             //Configuration
             services.Configure<ApplicationConfiguration>(Configuration.GetSection("AppSettings"));
 
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200/").AllowAnyHeader()
+                .AllowAnyMethod());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +55,8 @@ namespace PeopleApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            // Shows UseCors with named policy.
+            app.UseCors(b => b.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
 
             app.UseMvc();
         }
